@@ -1,0 +1,13 @@
+<launch>  
+    <!-- USB_CAM: Active the camera -->
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node">
+	<param name="pixel_format " type="string" value="yuyv"/> 
+	<param name="video_device  " type="string" value="/dev/video0"/>	
+    </node>
+
+    <!-- OPENCV: rco -->
+    <node name="rco" pkg="rco" type="Ojos_cara.py">	
+	<remap from="Image_pub" to="/opencv/output_video/rco"/>
+    </node>
+
+</launch>
