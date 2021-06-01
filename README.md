@@ -8,7 +8,25 @@ En el nodo [Ojos_cara.py](https://github.com/JuanDBecerra/Reconocimiento_Cara_y_
 ## PRE-REQUISITOS
 * [Instalación de OpenCV(4.5.2) en Linux-UBUNTU.](https://docs.opencv.org/4.5.2/d7/d9f/tutorial_linux_install.html)
 * Instalación de usb-cam.
- ´´´
+```
  $ sudo apt-get install ros-<distro>-usb-cam
- ´´´
+````
 ## EJECUCIÓN
+ 
+* Se corre en un terminal:
+```
+ $ roscore
+```
+### Hay dos opciones de ejecutarlo.
+  1. Se ejecuta el launch directamente donde se encuentran los nodos que se usan:
+  ```
+  $ roslaunch rco rco.launch
+  ```
+  2. Se ejecutan los nodos por separado:
+  ```
+  $ rosrun rco Ojos_cara.py
+  ```
+  ```
+  $ rosrun usb_cam usb_cam_node
+  ```
+ 
