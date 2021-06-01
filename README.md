@@ -29,4 +29,7 @@ En el nodo [Ojos_cara.py](https://github.com/JuanDBecerra/Reconocimiento_Cara_y_
   ```
   $ rosrun usb_cam usb_cam_node
   ```
- 
+ ### Autores
+ - Juan David Becerra
+ - Andres Sanchez
+ - Nicolas Pinilla
