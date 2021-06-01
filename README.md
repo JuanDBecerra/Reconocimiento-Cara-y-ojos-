@@ -22,7 +22,7 @@ En el nodo [Ojos_cara.py](https://github.com/JuanDBecerra/Reconocimiento_Cara_y_
   ```
   $ roslaunch rco rco.launch
   ```
-  2. Se ejecutan los nodos por separado:
+  2. Se ejecutan los nodos en diferentes terminales:
   ```
   $ rosrun rco Ojos_cara.py
   ```
